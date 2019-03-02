@@ -108,6 +108,8 @@ class Song(object):
         else:
             filename = "Lyrics_{}_{}.{}".format(self.artist.replace(" ", ""), self.title.replace(" ", ""),
                                                 extension).lower()
+            if "/" in filename:
+                filename.replace("/","")
 
         # Check if file already exists
         write_file = False
