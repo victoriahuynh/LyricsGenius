@@ -151,7 +151,7 @@ class Genius(API):
         """ Returns a lowercase string with punctuation and bad chars removed
         :param s: string to clean
         """
-        return s.translate(str.maketrans('', '', punctuation)).replace('\u200b', " ").strip().lower()
+        return s.translate(str.maketrans('', '', punctuation)).replace('\u200b', " ").replace('/', " ").strip().lower()
 
     def _result_is_lyrics(self, song_title):
         """ Returns False if result from Genius is not actually song lyrics
