@@ -161,7 +161,7 @@ class Genius(API):
 
         default_terms = ['track\\s?list', 'album art(work)?', 'liner notes',
                          'booklet', 'credits', 'interview', 'skit',
-                         'instrumental']
+                         'instrumental', "Remix", "Edit", "translation", "Version", "Cover", "Demo", "Live", "Blessed", "Oversat", "Visual", "Quotes", "Meaning", "Medley", "Intro", "Radio"]
         if self.excluded_terms:
             if self.replace_default_terms:
                 default_terms = self.excluded_terms
