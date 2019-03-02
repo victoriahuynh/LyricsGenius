@@ -161,7 +161,7 @@ class Genius(API):
 
         default_terms = ['track\\s?list', 'album art(work)?', 'liner notes',
                          'booklet', 'credits', 'interview', 'skit',
-                         'instrumental', 'born','forever boy', 'blessed', 'do you love me', 'lady money', 'attends-moi', 'baby loves', 'breaking you', 'remix', "Edit", "translation", "Version", "Cover", "Demo", "Live", "Oversat", "Visual", "Quotes", "Meaning", "Medley", "Intro", "Radio"]
+                         'instrumental', 'born','forever boy', 'blessed', 'do you love', 'lady money', 'attends-moi', 'baby loves', 'breaking you', 'remix', "Edit", "translation", "Version", "Cover", "Demo", "Live", "Oversat", "Visual", "Quotes", "Meaning", "Medley", "Intro", "Radio"]
         if self.excluded_terms:
             if self.replace_default_terms:
                 default_terms = self.excluded_terms
